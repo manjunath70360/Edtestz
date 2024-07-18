@@ -18,7 +18,7 @@ class Home extends Component {
   }
 
   fetchAppointments = async () => {
-    const url = 'http://localhost:3000/api/appointments'
+    const url = 'https://edtestz-icyj.onrender.com/api/appointments'
     const token = localStorage.getItem('token')
     const options = {
       headers: {
@@ -47,7 +47,7 @@ class Home extends Component {
     event.preventDefault()
     const {date, time} = this.state
     const appointmentDetails = {date, time}
-    const url = 'http://localhost:3000/api/appointments'
+    const url = 'https://edtestz-icyj.onrender.com/api/appointments'
     const token = localStorage.getItem('token')
     const options = {
       method: 'POST',
