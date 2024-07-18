@@ -1,0 +1,207 @@
+.booking-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #202020;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.booking-header {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  max-width: 900px;
+  justify-content: space-between;
+}
+.hello{
+  font-family: roboto;
+  font-size: 18px;
+}
+.close-icon {
+  color: white;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.booking-content {
+  background-color: #333;
+  border-radius: 10px;
+  padding: 40px;
+  width: 80%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+ 
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ height: 100%;
+ text-align: center;
+}
+
+.intro-image {
+  width: 160px;
+  height: 220px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.intro-title {
+  font-size: 28px;
+  color: #a4d907;
+  margin-bottom: 10px;
+  font-family: roboto;
+}
+
+.intro-text {
+  font-size: 14px;
+  font-family: roboto;
+}
+
+.calendar-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  overflow-y: auto; 
+  justify-content: center;
+}
+
+.calendar-section h3 {
+  font-family: roboto;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.react-calendar {
+width: 100%;
+  border-radius: 10px;
+}
+
+.react-calendar__tile {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timezone{
+  text-align: center;
+  margin-top: 20px;
+}
+.ist{
+  font-family: roboto;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 200;
+}
+.timezone-head{
+  font-weight: 500;
+  font-family: roboto;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.time-section {
+  text-align: center;
+  width: 80%;
+  max-width: 900px;
+}
+
+.time-section h2 {
+  margin-bottom: 5px;
+  font-family: roboto;
+  font-size: 22px;
+}
+
+.time-section p {
+  margin-bottom: 20px;
+  font-family: roboto;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.time-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-height: 200px; 
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.time-button {
+  background-color: transparent;
+  border: 1px solid #0b69ff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  color: #0b69ff;
+}
+
+.time-button:hover {
+  background-color: #0b69ff;
+  color: #fff;
+}
+
+.appoint-btn{
+  background-color: transparent;
+  border: 1px solid #0b69ff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+  color: #0b69ff;
+}
+.booked{
+  font-family: roboto;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.li{
+  font-family: roboto;
+  font-size: 15px;
+  margin: 5px;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .booking-content {
+    flex-direction: column;
+  }
+
+}
+@media (min-width: 768px) {
+  .intro-section, .calendar-section{
+    width: 50%;
+  }
+  .booking-content{
+    width: 80%;
+    height: 80vh;
+  }
+  .intro-image {
+    width: 180px;
+    height: 240px;
+  }
+
+  .booked{
+    font-family: roboto;
+    font-size: 20px;
+    margin-top: 25px;
+  }
+}

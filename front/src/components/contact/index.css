@@ -1,0 +1,77 @@
+
+.navbar {
+    z-index: 3;
+  }
+  
+  .contact-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://res.cloudinary.com/dwwunc51b/image/upload/v1719481376/laptop_bg_kcjkqy.avif') no-repeat center center/cover;
+    filter: blur(2px); 
+    z-index: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+  }
+  
+  .contact-content {
+    position: relative;
+    z-index: 2; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    top: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .head-contact {
+    font-size: 34px;
+    font-family: roboto;
+  }
+  
+  .sub-contact {
+    font-size: 22px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-family: roboto;
+    font-weight: 300;
+  }
+  
+  .contact-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: roboto;
+    background-color: #8CD437;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 12px 25px 12px 60px;
+    border: none;
+    border-radius: 25px;
+  }
+  
+  .whatsapp-icon {
+    margin-right: 4px;
+  }
+  .bug-img{
+    width: 150px;
+    height: 160px;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    cursor: pointer;
+    z-index: 2; 
+  }
